@@ -6,7 +6,10 @@ ctk.set_appearance_mode("system")
 janela = ctk.CTk()
 
 #definir o tamanho da janela
-janela.geometry("500x500")
+janela.geometry("500x300")
+
+#definir se a janela pode ser redimensionada
+janela.resizable(False, False)
 
 #definir o título da janela
 janela.title("Sistema de acesso - 2026")
@@ -51,7 +54,19 @@ senha.pack()
 
 #--------------------
 
+#criando botão
 
+botao = ctk.CTkButton(janela,
+width=200,
+height=50,
+text="Acessar",
+fg_color="blue",
+text_color="white",
+cursor ="spider",
+font=("sans", 20, "bold"))
+botao.pack(pady=30)
+
+#-----------------------------
 
 
 
